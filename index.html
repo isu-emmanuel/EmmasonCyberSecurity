@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>EMMASON CYBERSECURITY</title>
+  <meta name="description" content="A clean, responsive single-file website template (HTML, CSS, JS)." />  <style>
+    :root{
+      --accent:#0ea5a4;
+      --dark:#1a2541;
+      --muted:#64748b;
+      --bg:#f8fafc;
+      --card:#f7eaea;
+      --radius:12px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #afafac);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+   
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+   
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;padding:12px 0;
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:600}
+    .cta{padding:8px 14px;border-radius:10px;background:var(--accent);color:#044720;text-decoration:none;font-weight:700}
+
+   
+    .menu-toggle{display:none;background:none;border:0;font-size:20px}
+    .nav-links{display:flex;align-items:center}
+
+   
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero h1{font-size:36px;margin:0}
+    .hero p{color:var(--muted);margin-top:10px}
+    .hero-illustration{background:linear-gradient(180deg,rgb(107, 98, 47), #f1f7f9);padding:20px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(15,23,42,0.06)}
+
+   
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:15px}
+
+   
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+   
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    form{background:var(--card);padding:18px;border-radius:12px}
+    label{display:block;margin-bottom:6px;font-weight:600}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #585653;resize:vertical}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--dark);color:rgb(243, 9, 9);text-decoration:none;border:0;font-weight:700}
+
+    footer{margin-top:32px;padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    
+    .hidden{display:none}
+    .center{display:flex;align-items:center;justify-content:center}
+
+   
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+      nav a{margin-left:12px}
+      .menu-toggle{display:inline-block}
+      .nav-links{position:absolute;top:72px;left:0;right:0;background:transparent;display:none;flex-direction:column;padding:12px;gap:12px}
+      .nav-links.show{display:flex;background:rgba(197, 186, 186, 0.9);backdrop-filter:blur(6px);margin:0 16px;padding:12px;border-radius:12px}
+    }
+    @media (max-width:520px){
+      .hero h1{font-size:26px}
+    }
+
+  </style></head>
+<body>  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        <div class="logo"> <img src="LOGO.jpg" width="40" height="30"></div>
+        <div>
+          <div style="font-weight:800">EMMASON CYBERSECURITY</div>
+          <div class="muted" style="font-size:12px">Smart Protection for a Connected World</div>
+        </div>
+      </div><button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+  <div class="nav-links">
+    <nav aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#">Register </a>
+      <a href="#">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <!--<a class="cta" href="#contact">Get in touch</a>-->
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div>
+      <h1>Security Problem in Computing</h1>
+      <p class="muted">In terms of securitym computing very close to the wild west days.Some installations recognize computers and their data as a valuabe and vulnerable resource and have applied appropriate protection.</p>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="card">
+          <h3>Security Goals and Vulnerabilities</h3>
+          <p class="muted">Computer security consists of maintaining three characteristics: confidentiality, integrity and availability</p>
+        </div>
+        <div class="card">
+          <h3>Vulnerabilities</h3>
+          <p class="muted">We reverse these three security objectives when we consider Vulnerabilities. It is sometimes easier to consider Vulnerabilities as they apply to the three brad categories of system resources(hardware,softaware, and data).</p>
+        </div>
+        <div class="card">
+          <h3>SECURITY BREACHES</h3>
+          <p class="muted">In security, an exposure is a form of possible loss or harm in a computing system; examples of exposures are unauthorized disclosure of data, <br>
+           </p>
+           
+            
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <aside class="hero-illustration">
+      <div style="text-align:center">
+        <img src= "background2.PNG" width="200" height="200"/svg+xml;utf8,<svg xmlns='' width='360' height='220'><rect width='100%' height='100%' fill='%23e6f6f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%230a2540'>Your visual here</text></svg>" alt="illustration" style="width:100%;border-radius:8px;display:block;margin-bottom:14px">
+        <div class="muted">Threat Assessment and Penetration testing:</div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="features">
+    <h2 style="margin-top:10px">Data Base Security</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Concept of a Data Base</h3>
+        <p class="muted">A data base is a collection of data and a set of rules that organize the data by specifying certain relationships among the data. Through these rules. the user describes a logical format for the data. The data items are stored in a file, but the precise physical format of the file is of no concern to the user. A data base administrator is a person who defines the rules that organize the data and controls who should gave access to what parts of the data.</p>
+      </div>
+      <div class="card">
+        <h3>PROGRAM SECURITY</h3>
+        <p class="muted">Computing is just progras running on processors, including instructions integrared
+          into chips, firmware in read0only memoury, the basic hardware-only memory, the basic hardware-to-software interface(often called the BIOS).
+          device drivers, operating systems, network implementations, data base Management systems, utilities, applications, and user proggrams. 
+        </p>
+      </div>
+      <div class="card">
+        <h3>Our Services</h3>
+        <p class="muted">Treat Assessment and Penetration Testing: Identifying Vulnerabilities and weaknesses in systems and networks.<br>
+        Incident Response and Management: Reponding to and managing cybersecurity incidents to minimixe damage.<br>
+      Security `consulting : Providing Smart Protection to a Connected World</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 style="margin-top:22px">Gallery</h2>
+    <div class="gallery">
+      <img src="CY1.jpeg" alt="sample 1">
+      <img src="CY2.jpeg" alt="sample 2">
+      <img src="CY3.jpeg" alt="sample 3">
+      <img src="hero.jpeg" alt="sample 4">
+    </div>
+  </section>
+  <section id="gallery">
+    <h2 style="margin-top:22px">Gallery</h2>
+    <div class="gallery">
+      <img src="CY1.jpeg" alt="sample 1">
+      <img src="CY2.jpeg" alt="sample 2">
+      <img src="CY3.jpeg" alt="sample 3">
+      <img src="hero.jpeg" alt="sample 4">
+    </div>
+  </section>
+  <section id="gallery">
+    <h2 style="margin-top:22px">Gallery</h2>
+    <div class="gallery">
+      <img src="CY1.jpeg" alt="sample 1">
+      <img src="CY2.jpeg" alt="sample 2">
+      <img src="CY3.jpeg" alt="sample 3">
+      <img src="hero.jpeg" alt="sample 4">
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div>
+      <h2>Join Us</h2>
+      <p class="muted">At Emmason Cybersecurity, we are committted to protecting the Smart Connected World. Partner with us to safeguard your digiatal assets and stay ageac of cyber threats.</p>
+
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write a quick message" required></textarea>
+
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+
+    <aside class="card">
+      <h3>Get in touch with Us</h3>
+      <p class="muted">Email: <a href="info@Emmasoncybersecurity">info@Emmasoncybersecurity</a></p>
+      <p class="muted">Phone: +234 070-686-38015</p>
+
+      <div style="margin-top:12px">
+        <strong>Office</strong>
+        <p class="muted">Ngodo Afikpo, Ebonyi State, Nigeria</p>
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Isu Emmanuel  Ogbonnia— Built 
+</footer>
+
+  </div>  <!-- Toast notification -->  <div id="toast" class="hidden" style="position:fixed;right:20px;bottom:20px;background:#052f2f;color:white;padding:12px 16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.3)"></div>  <script>
+    // Small interactive JS: menu toggle, smooth scroll, form validation + toast
+    (function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      const navAnchors = document.querySelectorAll('nav a');
+      const yearEl = document.getElementById('year');
+      yearEl.textContent = new Date().getFullYear();
+
+      toggle.addEventListener('click', ()=>{
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('show');
+      });
+
+      // Smooth scroll for nav anchors
+      navAnchors.forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          e.preventDefault();
+          const target = document.querySelector(a.getAttribute('href'));
+          if(target){
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+            links.classList.remove('show');
+          }
+        })
+      });
+
+      // Contact form
+      const form = document.getElementById('contactForm');
+      const toast = document.getElementById('toast');
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+        if(!name || !email || !message){
+          showToast('Please complete all fields.');
+          return;
+        }
+        // Basic email pattern check
+        if(!/^\S+@\S+\.\S+$/.test(email)){
+          showToast('Please enter a valid email address.');
+          return;
+        }
+
+        // Simulate send (replace with real AJAX / fetch to backend)
+        showToast('Thanks, ' + name + '! Your message was sent.');
+        form.reset();
+      });
+
+      function showToast(msg, timeout=3200){
+        toast.textContent = msg;
+        toast.classList.remove('hidden');
+        toast.style.opacity = '1';
+        setTimeout(()=>{
+          toast.style.opacity = '0';
+          setTimeout(()=>toast.classList.add('hidden'),400);
+        }, timeout);
+      }
+
+      // Small accessibility: close menu on Escape
+      document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape'){
+          links.classList.remove('show');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+    })();
+  </script></body>
+</html>
